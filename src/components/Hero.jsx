@@ -7,9 +7,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-screen items-center bg-white px-5 pt-20 pb-10 dark:bg-neutral-950"
+      className="flex min-h-screen w-full max-w-full items-center overflow-x-clip bg-white px-5 pt-20 pb-10 dark:bg-neutral-950"
     >
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-6 md:grid-cols-2">
+      <div className="mx-auto grid w-full min-w-0 max-w-6xl grid-cols-1 items-center gap-6 md:grid-cols-2">
+        {" "}
         {/* Hero Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -50,7 +51,6 @@ export default function Hero() {
             </a>
           </div>
         </motion.div>
-
         {/* Hero Video */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -59,7 +59,8 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="flex justify-center"
         >
-          <div className="flex h-96 w-96 items-center justify-center md:h-125 md:w-125 lg:h-150 lg:w-150">
+          <div className="flex h-auto aspect-square w-full max-w-96 items-center justify-center md:h-125 md:w-125 lg:h-150 lg:w-150">
+            {" "}
             <video
               src={memojiVideo}
               autoPlay
