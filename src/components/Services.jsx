@@ -52,11 +52,11 @@ export default function Services() {
               <motion.div
                 initial={{
                   opacity: 0,
-                  x: service.reverse ? 40 : -40,
+                  y: service.reverse ? 40 : -40,
                 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                 }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -74,11 +74,11 @@ export default function Services() {
               <motion.div
                 initial={{
                   opacity: 0,
-                  x: service.reverse ? -40 : 40,
+                  y: service.reverse ? -40 : 40,
                 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                 }}
                 viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
