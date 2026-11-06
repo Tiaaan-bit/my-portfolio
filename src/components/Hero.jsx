@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
+import memojiVideo from "../assets/memoji.webm";
+
 export default function Hero() {
   return (
     <section
@@ -8,13 +10,14 @@ export default function Hero() {
       className="flex min-h-screen items-center bg-white px-5 pt-20 pb-10 dark:bg-neutral-950"
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-6 md:grid-cols-2">
+        {/* Hero Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-1xl font-bold leading-tight tracking-tight text-neutral-900 dark:text-white md:text-7xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-neutral-900 dark:text-white md:text-7xl">
             Developing Solutions That Make an Impact
             <span className="text-blue-500">.</span>
           </h1>
@@ -48,6 +51,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
+        {/* Hero Video */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -57,7 +61,7 @@ export default function Hero() {
         >
           <div className="flex h-96 w-96 items-center justify-center md:h-125 md:w-125 lg:h-150 lg:w-150">
             <video
-              src="/src/assets/memoji.webm"
+              src={memojiVideo}
               autoPlay
               loop
               muted
