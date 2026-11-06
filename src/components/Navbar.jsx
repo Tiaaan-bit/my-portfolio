@@ -22,7 +22,7 @@ export default function Navbar() {
           className="flex items-center gap-2 text-2xl font-bold tracking-tight text-neutral-900 dark:text-white"
         >
           <img
-            src="/public/logo.svg"
+            src={`${import.meta.env.BASE_URL}logo.svg`}
             alt="Tiaaan Logo"
             className="h-10 w-10 object-contain"
           />

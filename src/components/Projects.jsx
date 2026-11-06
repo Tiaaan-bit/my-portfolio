@@ -72,7 +72,7 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={`${project.title} preview`}
-                  className="aspect-16/10 w-full object-contain transition duration-500 group-hover:scale-105"
+                  className="aspect-16/10 w-full object-fill transition duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
