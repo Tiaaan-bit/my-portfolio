@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
 
+import phoneImage from "../assets/phone.png";
+import laptopImage from "../assets/laptop.png";
+
 const services = [
   {
     title: "Mobile Application Development",
     description:
       "I develop high-performance mobile applications designed for speed, reliability, and seamless user experience. From modern lifestyle apps to practical everyday solutions, I focus on building intuitive and efficient mobile experiences.",
-    image: "/src/assets/phone.png",
+    image: phoneImage,
     imageAlt: "Mobile application showcase",
     reverse: false,
   },
@@ -13,7 +16,7 @@ const services = [
     title: "Web Application Development",
     description:
       "I build fast, scalable web applications with clean design and seamless functionality. Focused on usability and efficiency, I create web experiences that work effortlessly across devices.",
-    image: "/src/assets/laptop.png",
+    image: laptopImage,
     imageAlt: "Web application showcase",
     reverse: true,
   },
